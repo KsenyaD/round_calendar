@@ -1,5 +1,6 @@
-const today = document.getElementById('today');
 const circle = document.querySelector('.circle');
+
+const today = document.getElementById('today');
 const year17 = document.getElementById('year17');
 const year15 = document.getElementById('year15');
 const year12 = document.getElementById('year12');
@@ -8,6 +9,8 @@ const year07 = document.getElementById('year07');
 const year06 = document.getElementById('year06');
 const year04 = document.getElementById('year04');
 const year01 = document.getElementById('year01');
+
+let viesArray = [today, year17, year15, year12, year11, year07, year06, year04, year01];
 
 let valueYear11 = Math.PI / 2;
 let valueYear12 = valueYear11 - Math.PI / 12;
@@ -40,7 +43,12 @@ function convertValueToDeg(view, value) {
     let x = value / (Math.PI / 2);
     let deg = 90 - (x * 90); //проставляем градус удаления от начальной точки для всех объектов
     view.addEventListener("click", () => { // вешаем клики на все объекты
-        circle.style.transform = `rotate(${deg}deg)` //при срабатывании клика  мы крутив круг до нужного места
+            circle.style.transform = `rotate(${deg}deg)`; //при срабатывании клика  мы крутив круг до нужного места
+            viesArray.forEach((value, index, array) => {
+                value.classList.remove('main__date__actv');
+            });
+            view.classList.add('main__date__actv');
+
         }
     );
 

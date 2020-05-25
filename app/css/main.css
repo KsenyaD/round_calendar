@@ -43,12 +43,67 @@ body {
   margin: 0;
   color: #d5d5d5; }
 
-.wrap {
+/*header start*/
+.subtitle {
+  margin: 38px auto 0;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 0.857;
+  width: 440px; }
+
+.content-info {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.375;
+  text-align: left;
+  width: 440px;
+  margin: 15px auto 0; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1630px;
+  margin: 110px 150px 0 150px; }
+
+.header__logo {
+  display: inline-block; }
+
+.header__logo-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.875;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  text-decoration: none; }
+
+.burger-menu {
+  width: 33px;
+  height: 30px;
+  display: inline-block; }
+
+.burger__line {
+  height: 1px;
+  background-color: white;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: block; }
+
+.burger-menu:last-child span {
+  margin-bottom: 0; }
+
+/*header end*/
+/*wrap__circle start*/
+.wrap__circle {
+  margin-top: 95px;
   transform: rotate(0deg);
   transform-origin: center center;
   transition-duration: 1000ms;
   display: inline-block;
-  margin-top: 250px; }
+  position: absolute; }
 
 .circle {
   -moz-border-radius: 600px / 600px;
@@ -61,7 +116,7 @@ body {
   align-items: center;
   justify-content: center;
   transition-duration: 1500ms;
-  margin-left: -40%; }
+  margin-left: -50%; }
 
 .date {
   font-size: 14px;
@@ -73,3 +128,43 @@ body {
   position: absolute;
   transition-duration: 1000ms;
   cursor: pointer; }
+
+/*wrap__circle end*/
+/*main start*/
+.main {
+  margin-top: 95px; }
+
+.main__contents {
+  width: 450px;
+  margin: auto; }
+
+.title {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffd7f1;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 0 auto 0; }
+
+.main__date {
+  display: inline-block;
+  font-size: 200px;
+  color: #632efa;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 35px;
+  letter-spacing: .1em; }
+
+.main__date__actv {
+  color: #f976c0; }
+
+.main__content {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffd7f1;
+  font-weight: 400;
+  line-height: 1.875; }
+
+/*main end*/
+.footer {
+  margin: 300px 0 125px 0; }
